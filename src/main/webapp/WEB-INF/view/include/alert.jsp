@@ -9,6 +9,10 @@ String frmId = (String)request.getAttribute("frmId");
 
 <% if ("alertMessageBack".equals(code)) { %>
 <script>
+	alert('${msg}');
+	location.href='${url}';
+</script>
+<script>
 	alert("<%=message%>");
 	history.back();
 </script>

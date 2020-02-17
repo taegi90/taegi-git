@@ -45,29 +45,29 @@ public class UserController {
 				return "redirect:/index.do";
 			}
 		}
-	@RequestMapping("/user/idCheck.do")
-	public String idCheck(Model model, @RequestParam("id") String id) {
-		int cnt = userService.idCheck(id);
-		model.addAttribute("value", cnt);
-		return "include/return";
-	}
-	
-	@RequestMapping("/user/joinProcess.do")
-	public String insert(Model model, UserVO vo) {
-		int r = userService.insert(vo);
-		String msg = "";
-		String url = "";
-		if (r > 0) {
-			msg = "정상적으로 가입되었습니다.";
-			url = "/index.do";
-		} else {
-			msg = "회원가입 실패";
-			url = "/user/joinForm.do";
+		@RequestMapping("/user/idCheck.do")
+		public String idCheck(Model model, @RequestParam("id") String id) {
+			int cnt = userService.idCheck(id);
+			model.addAttribute("value", cnt);
+			return "include/return";
 		}
-		model.addAttribute("msg", msg);
-		model.addAttribute("url", url);
-		return "include/alert";
-	}
+		
+		@RequestMapping("/user/joinProcess.do")
+		public String insert(Model model, UserVO vo) {
+			int r = userService.insert(vo);
+			String msg = "";
+			String url = "";
+			if (r > 0) {
+				msg = "정상적으로 가입되었습니다.";
+				url = "/pp/index.do";
+			} else {
+				msg = "회원가입 실패";
+				url = "/pp/user/joinForm.do";
+			}
+			model.addAttribute("msg", msg);
+			model.addAttribute("url", url);
+			return "include/alert";
+		}
 	
 	
 	

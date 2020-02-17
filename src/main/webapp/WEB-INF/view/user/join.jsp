@@ -29,7 +29,7 @@ table {
 		var data = $("#joinform").serialize();
 		console.log(data);
 		$.ajax({
-			url : "/dog/user/idCheck.do",
+			url : "/user/idCheck.do",
 			data : {id:$("#id").val()},
 			type : "POST",
 			async : false,
@@ -77,7 +77,7 @@ table {
 				alert("아이디를 입력해 주세요");
 			} else {
 				$.ajax({
-					url : "/dog/user/idCheck.do",
+					url : "/user/idCheck.do",
 					data : {id:$("#id").val()},
 					type : "POST",
 					success : function(data) {

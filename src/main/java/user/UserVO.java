@@ -5,39 +5,27 @@ import java.sql.Timestamp;
 public class UserVO {
 
 	private int no;					// 회원번호
-	private String email;			// 이메일
-	private String nickname;
+	private String id;				// 아이디
 	private String password;		// 비밀번호
 	private String name;			// 이름
 	private int age;				// 나이
 	private int gender;				// 성별
+	private String email;			// 이메일
 	private Timestamp regdate;		// 등록일
 	private Timestamp modifydate;	// 수정일
-	private String birthday;
 	
 	
-	
-	
-	
-	
-	
-	public String getNickname() {
-		return nickname;
-	}
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
-	}
-	public String getBirthday() {
-		return birthday;
-	}
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
-	}
 	public int getNo() {
 		return no;
 	}
 	public void setNo(int no) {
 		this.no = no;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getPassword() {
 		return password;

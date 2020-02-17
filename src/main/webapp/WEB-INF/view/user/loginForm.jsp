@@ -211,69 +211,7 @@ String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code&cli
 	    color: rgb(168, 167, 168);
 	    text-align: center;
 	    word-break: keep-all;
-	 }
-	 .join{
-    position: relative;
-    width:1200px;
-    height: 800px;
-    margin:30px 0px 0px;
-    display: block;
-}
-	.person{
-    position:absolute; 
-    right: 800px;
-    display: flex;
-    flex-direction: column;
-    box-align: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background-color: #3f60cc;
-    text-align: center;
-    margin-right: 24px;
-    transition: box-shadow 0.5s ease 0s;
-
-}
-.person1{
-    position:absolute; 
-    right:450px;
-    display: flex;
-    flex-direction: column;
-    box-align: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background-color:#3ec728;
-    text-align: center;
-    margin-right: 24px;
-    transition: box-shadow 0.5s ease 0s;
-
-}
-.join-person{
-    position: relative;
-    top:5px;
-    width: 282px;
-    height: 200px;
-    flex: 1 1 auto;
-    position: relative;
-    top:3px;
-    
-}
-.join-person-persontitle{
-    font-family: 'Noto Sans KR', sans-serif;
-    text-decoration: none;
-    margin-bottom: 8px;
-    box-pack: center;
-    justify-content: center;
-
-}
-.join-person-persontitle1{  
-    position: relative;
-    top:50px;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: white;
-    font-size:20px;
-}
+	
 	 
 	 
 	 
@@ -292,32 +230,7 @@ String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code&cli
 	</span>  
 	<span class="t2">프로젝트</span>
 	<p class="t3">로그인 해주세요.</p>    
-      <ul class="join">
-        <li class="person">
-            <a class="click" href="/d:/java/html/mingo/join_person_email_step2.html" >
-            <div class="join-person">
-                <img src="email.png" width="90px" height="90px">
-                <div class="join-person-persontitle">
-                    <h3 class="join-person-persontitle1">이메일로 회원가입</h3>
-                </div>
-                <p class="persontitle-content">사용하는 이메일로 가입하기</p>
-            </div>
-            
-        </a>
-        </li>
-        <li class="person1">
-            <a class="click" href="/d:/java/html/mingo/join_cafe_step1.html">
-                <div class="join-person">
-                    <img src="naver.png" width="90px" height="90px">
-                    <div class="join-person-persontitle">
-                        <h3 class="join-person-persontitle1">네이버 간편회원가입</h3>
-                    </div>
-                    <p class="persontitle-content">사용하는 네이버 계정으로 가입하기</p>
-                </div>
-                
-            </a>
-            </li>
- 
+      
 	<form id="login" action = "/loginProcess.do" method="post">
         <div class="main">
             <label class="email1">
@@ -362,7 +275,7 @@ String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code&cli
 		        <p>Copyright © CAFE 태기 All Rights Reserved.</p>
 		    </div>
 			</div>
-		</div>
+		 </div>
 	
 	
 		

@@ -4,17 +4,17 @@
 <mapper namespace="user">
 	
 	<select id="loginProcess" parameterType="user.UserVO" resultType="user.UserVO">
-	SELECT * FROM taegi.user WHERE email=#{email} and password=#{password}
+	SELECT * FROM taegi.user WHERE id=#{id} and password=#{password}
 	</select>
 	
 	<select id="idCheck" parameterType="String" resultType="Integer">
-		SELECT COUNT(*) FROM user WHERE no=#{no}
+		SELECT COUNT(*) FROM taegi.user WHERE id=#{id}
 	</select>
 	
 	<insert id="insert" parameterType="user.UserVO">
-		insert into user (no, email, nickname, password, name, age, gender, regdate, modifydate, birthday)
+		insert into taegi.user (id, password, name, age, gender, email, regdate, modifydate)
 		values
-		(#{no}, #{email}, #{nickname}, md5(#{password}), #{name}, #{age}, #{gender}, now(), null, #{birthday})
+		(#{id}, md5(#{password}), #{name}, #{age}, #{gender}, #{email}, now(), null)
 	</insert>
 	
 </mapper>
